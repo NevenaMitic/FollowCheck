@@ -33,4 +33,13 @@ The goal was to create a simple and accessible tool that allows users to better 
 
 👩‍💻 Author
 Nevena Mitić
-Portfolio: https://nevena-portfolio.vercel.app/
+Portfolio: https://nevena-portfolio.vercel.app
+
+<img width="1900" height="864" alt="{C4550B31-2524-4C39-BB09-497DDDC6D325}" src="https://github.com/user-attachments/assets/d20d7ec6-7b67-49d5-88b8-700cba42d5e1" />
+<img width="1889" height="867" alt="{1A2A0737-1757-496A-A276-4B7BF945F004}" src="https://github.com/user-attachments/assets/df22ae41-210e-4da9-b145-c250f9f3a193" />
+<img width="1858" height="846" alt="ChatGPT Image Aug 22, 2026, 01_11_11 AM" src="https://github.com/user-attachments/assets/b37ac010-b3b9-4d5f-8e17-00167aba6ab1" />
+
+
+
+
+
