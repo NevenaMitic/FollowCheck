@@ -61,6 +61,7 @@ By uploading the data export, you can quickly see which accounts don't follow yo
 FollowCheck **does not** require access to your Instagram account, password, or login credentials.
 
 The application works exclusively with data exported directly by the user from Instagram.
+Everything runs in your browser, so your data is never uploaded or stored. Anonymous, cookieless page-view analytics (Vercel Web Analytics) are used to measure site traffic.
 
 ## 🛠️ Tech Stack
 
