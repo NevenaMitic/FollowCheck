@@ -14,7 +14,6 @@ function writeFlagged(set: Set<string>) {
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...set]));
   } catch {
-    // localStorage nedostupan (npr. privatni mod) — tiho ignorišemo
   }
 }
 

@@ -4,13 +4,22 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n/i18n-context";
 
-function ScreenshotSlot({ index, label }: { index: number; label: string }) {
+function ScreenshotSlot({
+  index,
+  label,
+  priority = false,
+}: {
+  index: number;
+  label: string;
+  priority?: boolean;
+}) {
   return (
     <div className="relative aspect-4/3 w-full overflow-hidden rounded-xl border border-dashed border-line bg-panel-hi">
       <Image
         src={`/guide/step-${index}.jpeg`}
         alt={label}
         fill
+        priority={priority}
         className="object-contain"
         sizes="(max-width: 640px) 100vw, 50vw"
       />
@@ -50,18 +59,27 @@ export function ExportGuide({ onContinue }: { onContinue: () => void }) {
               </div>
             </div>
 
-            <ScreenshotSlot index={i + 1} label={t.guide.screenshotPlaceholder} />
+            <ScreenshotSlot
+              index={i + 1}
+              label={`${step.title} – ${t.guide.title}`}
+              priority={i < 2}
+            />
           </li>
         ))}
       </ol>
 
       <div className="mt-8 flex justify-end">
         <button
+          type="button"
           onClick={onContinue}
           className="group inline-flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-sm font-medium text-void transition-transform hover:scale-[1.02] active:scale-[0.98]"
         >
           {t.guide.next}
-          <ArrowRight size={16} className="transition-transform group-hover:translate-x-0.5" />
+          <ArrowRight
+            size={16}
+            className="transition-transform group-hover:translate-x-0.5"
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>

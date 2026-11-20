@@ -19,9 +19,9 @@ export default function Home() {
         <Hero onStart={scrollToWizard} />
         <ProcessSteps />
         <Wizard />
+        <FAQ />
       </main>
       <Footer />
-      <FAQ />
     </div>
   );
 }
